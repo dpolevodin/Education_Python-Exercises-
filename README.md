@@ -1,2 +1,2 @@
-# Education_Python-Exercises-
+# Education_Python-Exercises
 Exercises
