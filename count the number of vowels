@@ -1,0 +1,8 @@
+vowels = ['a', 'e','i', 'o', 'u']
+word = input('Provide a word to search for vowels:')
+found = 0
+
+for letter in word:
+    if letter in vowels:
+        found += 1
+print('In provided word was found vowels', found, 'times')
