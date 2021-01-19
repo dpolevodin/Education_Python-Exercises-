@@ -1,0 +1,21 @@
+Created on Tue Jan 19 10:29:21 2021
+
+@author: polevodin-di
+"""
+book = "The Hitchhiker's Guide to the Galaxy"
+booklist = list(book)
+print(booklist[0:3])
+
+booklist_string = ''.join(booklist[0:3])
+print(booklist_string)
+
+booklist_string2 = ''.join(booklist[-10:-7])
+print(booklist_string2)
+
+backwards = booklist[::-1]
+backwards_word = ''.join(backwards)
+print(backwards_word)
+
+every_other = booklist[::2]
+every_other2 = ''.join(every_other)
+print(every_other2)
