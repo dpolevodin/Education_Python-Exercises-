@@ -1,18 +1,21 @@
+
 # Task: Change phrase "Don't panic" to phrase "on tap"
 
 phrase = "Don't panic!"
 plist = list(phrase)
 
 #v1 pop/insert/remove
-#for i in range(4):
-#    plist.pop()
-#plist.pop(0)
-#plist.remove("'")
-#plist.extend([plist.pop(),plist.pop()])
-#plist.insert(2, plist.pop(3))
+for i in range(4):
+    plist.pop()
+plist.pop(0)
+plist.remove("'")
+plist.extend([plist.pop(),plist.pop()])
+plist.insert(2, plist.pop(3))
 
-#v2 (range&join)
+#v2 (range&join_without change plist)
 
-new_phrase = ''.join(plist[1:3])
-new_phrase = new_phrase + ''.join([plist[5], plist[4], plist[7], plist[6]])
+#new_phrase = ''.join(plist[1:3])
+#new_phrase = new_phrase + ''.join([plist[5], plist[4], plist[7], plist[6]])
+
 print(new_phrase)
+print(plist)
