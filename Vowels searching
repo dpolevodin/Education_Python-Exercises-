@@ -1,0 +1,18 @@
+vowels = ['a', 'e','i', 'o', 'u']
+word = input('Provide a word to search for vowels:')
+found = []
+
+for letter in word:
+    if letter in vowels:
+        if letter not in found:
+            found.append(letter)
+for vovel in found:
+    print(vovel)
+
+#Ниже поиск гласных в слове с помощью множеств
+    
+# vowels = {'a', 'e', 'e', 'i', 'o', 'u', 'u'}
+# word = input('Provide a word to search for vowels:')
+# i = vowels.intersection(set(word))
+# for vowel in i:
+#     print(vowel)
