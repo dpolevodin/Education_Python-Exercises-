@@ -1,0 +1,6 @@
+def search4letters(phrase:str, letters:str='aeiou') -> set:
+    """ возвращает множество букв из 'letters', найденных во указанной фразе"""
+    return set(letters).intersection(set(phrase))
+
+
+search4letters('galaxy','xyz')
