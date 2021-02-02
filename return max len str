@@ -1,0 +1,14 @@
+def high(x):
+    alphabet = list('abcdefghijklmnopqrstuvwxyz')
+    x_lower = x.lower()
+    list_words = x_lower.split(' ')
+    d_result = {}
+    
+    for word in list_words:
+        w = list(word)
+        new_list = []
+        for letter in w:
+            if letter in alphabet:
+                new_list.append(alphabet.index(letter))
+        d_result[word] = sum(new_list)
+    return max(d_result, key=d_result.get)
